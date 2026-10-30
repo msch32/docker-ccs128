@@ -50,6 +50,9 @@ RUN dpkg --add-architecture i386 && \
     libnspr4 \
     libgbm1 \
     libdrm2 \
+    gcc-msp430 \
+    mspdebug \
+    gdb-msp430 \
     && rm -rf /var/lib/apt/lists/*
 
 # Add Deadsnakes PPA to install Python 3.9 and its library package
