@@ -15,4 +15,6 @@ docker run -it --rm \
   --device=/dev/bus/usb \
   -v "$HOME/ccs_container_data:/home/ti" \
   -v "$(pwd):/installer_folder" \
+  --privileged \
+  --device=/dev/bus/usb \
   ccs-ubuntu2204
