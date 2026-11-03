@@ -22,6 +22,7 @@ cd /installer_folder/
 ```
 
 Von dort kann jetzt mit `./ccs_setup_12.8.1.00005.run` die Installation von Code Composer Studio gestartet werden.
+
 **ACHTUNG** Der Default-Installationspfad `/root/ti/…` liegt in dem Speicher des Containers. Dieser wird nach Beenden des Containers gelöscht.  
 Durch Austauschen von `/root/…` durch `/home/…` in dem vorgeschlagenen Installationspfad wird dieser an einen Ort gelegt, der durch das Run-Skript auf den Ordner `~/ccs_containerdata` (Der Ordner wird durch das Run-Skript erstellt) gemapt wird.
 Somit geht die Installation und die Daten nach Beenden des Containers nicht verloren.
